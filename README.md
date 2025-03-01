@@ -30,12 +30,12 @@ Data diambil dari Google Scholar, difilter untuk tahun 2024, lalu diproses dan d
 - Menyediakan contoh hasil **data setelah preprocessing** dalam file CSV
 
 
-Data_Collection_Preprocessing/
-│── data/
-│   │── papers.csv
-│   │── cleaned_papers.csv
-│── scripts/
-│   │── main.py
-│── docs/
-│   │── README.md
-│── requirements.txt
+
+project_Data Collection dan Preprocessing/  
+│── data/  
+│   ├── papers.csv  
+│   ├── cleaned_papers.csv  
+│── scripts/  
+│   ├── main.py  
+│── README.md  
+│── requirements.txt  
