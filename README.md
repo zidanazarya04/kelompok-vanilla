@@ -35,45 +35,5 @@ Data diambil dari Google Scholar, difilter untuk tahun 2024, lalu diproses dan d
 # Project ini bertujuan untuk melakukan scraping dan pengelompokan judul penelitian berdasarkan tema menggunakan teknik Topic Modeling.
 # Data diambil dari Google Scholar, difilter untuk tahun 2024, lalu diproses dan dikelompokkan ke dalam beberapa kategori topik.
 
-import pandas as pd
-import re
-import string
-import nltk  # type: ignore
-from nltk.corpus import stopwords  # type: ignore
-from nltk.tokenize import word_tokenize  # type: ignore
 
-# Download stopwords jika belum ada
-nltk.download('stopwords')
-nltk.download('punkt')
-
-# Inisialisasi stopwords bahasa Indonesia
-try:
-    stop_words = set(stopwords.words('indonesian'))
-except:
-    nltk.download('stopwords')
-    stop_words = set(stopwords.words('indonesian'))
-
-def clean_text(text):
-    """Fungsi untuk membersihkan teks"""
-    text = str(text).lower()  # Lowercasing
-    text = text.translate(str.maketrans("", "", string.punctuation))  # Hapus tanda baca
-    text = re.sub(r'\d+', '', text)  # Hapus angka
-    text = re.sub(r'[^\w\s]', '', text)  # Hapus karakter spesial
-    tokens = word_tokenize(text)  # Tokenisasi
-    tokens = [word for word in tokens if word not in stop_words]  # Hapus stopwords
-    return " ".join(tokens)
-
-# Baca data dari CSV
-df = pd.read_csv("papers.csv")
-
-# Pastikan kolom 'title' ada sebelum lanjut
-if 'title' not in df.columns:
-    raise ValueError("Kolom 'title' tidak ditemukan dalam CSV!")
-
-# Terapkan text cleaning pada kolom "title"
-df['clean_title'] = df['title'].apply(clean_text)
-
-# Simpan hasil ke file baru
-df.to_csv("cleaned_papers.csv", index=False)
-print("✅ Preprocessing selesai, file disimpan sebagai cleaned_papers.csv")
 
