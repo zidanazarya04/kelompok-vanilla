@@ -30,13 +30,12 @@ Data diambil dari Google Scholar, difilter untuk tahun 2024, lalu diproses dan d
 - Menyediakan contoh hasil **data setelah preprocessing** dalam file CSV
 
 
-project_name/  
-│── data/  
-│   ├── papers.csv  # Data mentah hasil scraping  
-│   ├── cleaned_papers.csv  # Data yang telah diproses  
-│── scripts/  
-│   ├── main.py  # Kode utama untuk scraping dan preprocessing  
-│── README.md  # Dokumentasi proyek  
-│── requirements.txt  # Daftar dependensi yang diperlukan 
-
-
+Data_Collection_Preprocessing/
+│── data/
+│   │── papers.csv
+│   │── cleaned_papers.csv
+│── scripts/
+│   │── main.py
+│── docs/
+│   │── README.md
+│── requirements.txt
