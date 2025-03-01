@@ -29,7 +29,7 @@ Data diambil dari Google Scholar, difilter untuk tahun 2024, lalu diproses dan d
 - **README.md ini** menjelaskan sumber data, struktur direktori proyek, dan tools yang digunakan.  
 - Menyediakan contoh hasil **data setelah preprocessing** dalam file CSV
 
-
+### 5. struktur direktory
 
 project_Data Collection dan Preprocessing/  
 │── data/  
