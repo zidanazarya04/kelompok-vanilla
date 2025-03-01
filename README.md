@@ -4,9 +4,12 @@
 Project ini bertujuan untuk melakukan scraping dan pengelompokan judul penelitian berdasarkan tema menggunakan teknik Topic Modeling.  
 Data diambil dari Google Scholar, difilter untuk tahun 2024, lalu diproses dan dikelompokkan ke dalam beberapa kategori topik.
 
-## Teknologi yang digunakan:  
-1. **Scraping:** BeautifulSoup / Selenium / Scrapy
-2. **Preprocessing:** NLTK / spaCy / Pandas
+## Teknologi yang Digunakan  
+
+| Tahap            | Tools/Library            |
+|------------------|-------------------------|
+| Scraping        | `BeautifulSoup`, `Selenium` |
+| Preprocessing   | `NLTK`, `Pandas` |
 
 ## Langkah-langkah Pengerjaan  
 
@@ -15,7 +18,7 @@ Data diambil dari Google Scholar, difilter untuk tahun 2024, lalu diproses dan d
 - Mengundang dosen sebagai kolaborator dengan email: **rizalespe@gmail.com**.  
 
 ### 2. Pengumpulan Data (Scraping)  
-- Menggunakan **BeautifulSoup / Selenium** untuk mengambil judul penelitian beserta informasi penulis dan tahun publikasi.  
+- Menggunakan **BeautifulSoup / Selenium** untuk mengambil judul penelitiannya 
 - Data yang diperoleh disimpan dalam **format CSV** untuk proses selanjutnya.  
 
 ### 3. Preprocessing Data  
