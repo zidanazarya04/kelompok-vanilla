@@ -1,8 +1,7 @@
 # **🚀 Topic Modeling Research Papers from Google Scholar with BERTopic**  
 
 ## 📌 Deskripsi Proyek  
-Proyek ini bertujuan untuk melakukan **scraping dan pengelompokan judul penelitian** menggunakan teknik **Topic Modeling dengan BerTopic**.  
-Data diambil dari **Google Scholar** (tahun **2024**), difilter, lalu diproses untuk dikelompokkan ke dalam beberapa kategori topik.  
+Proyek ini bertujuan untuk melakukan **scraping dan pengelompokan judul penelitian** menggunakan teknik **Topic Modeling dengan BerTopic**. Data diambil dari **Google Scholar** (tahun **2024**), difilter, lalu diproses untuk dikelompokkan ke dalam beberapa kategori topik.  
 
 ## ⚡ Teknologi yang Digunakan  
 
