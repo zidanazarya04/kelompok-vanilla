@@ -1,44 +1,52 @@
-# **Project MLOps: Data Collection dan Preprocessing**
+# **🚀 Topic Modeling Research Papers from Google Scholar with BERTopic**  
 
-## Deskripsi Proyek  
-Project ini bertujuan untuk melakukan scraping dan pengelompokan judul penelitian berdasarkan tema menggunakan teknik Topic Modeling.  
-Data diambil dari Google Scholar, difilter untuk tahun 2024, lalu diproses dan dikelompokkan ke dalam beberapa kategori topik.
+## 📌 Deskripsi Proyek  
+Proyek ini bertujuan untuk melakukan **scraping dan pengelompokan judul penelitian** menggunakan teknik **Topic Modeling dengan BerTopic**.  
+Data diambil dari **Google Scholar** (tahun **2024**), difilter, lalu diproses untuk dikelompokkan ke dalam beberapa kategori topik.  
 
-## Teknologi yang Digunakan  
+## ⚡ Teknologi yang Digunakan  
 
 | Tahap            | Tools/Library            |
 |------------------|-------------------------|
 | Scraping        | `BeautifulSoup`, `Selenium` |
-| Preprocessing   | `NLTK`, `Pandas` |
+| Preprocessing   | `NLTK`, `spaCy`, `Pandas` |
+| Topic Modeling  | `BerTopic`, `scikit-learn` |
 
-## Langkah-langkah Pengerjaan  
+## 🚀 Langkah-langkah Pengerjaan  
 
-### 1. Pembuatan Repository GitHub  
-- Membuat repository GitHub kelompok.  
-- Mengundang dosen sebagai kolaborator dengan email: **rizalespe@gmail.com**.  
+### 1️⃣ Pembuatan Repository GitHub  
+- Membuat repository GitHub untuk proyek ini.  
+- Menambahkan kolaborator jika diperlukan.  
 
-### 2. Pengumpulan Data (Scraping)  
-- Menggunakan **BeautifulSoup / Selenium** untuk mengambil judul penelitiannya 
-- Data yang diperoleh disimpan dalam **format CSV** untuk proses selanjutnya.  
+### 2️⃣ Pengumpulan Data (Scraping)  
+- Menggunakan **BeautifulSoup / Selenium** untuk mengambil judul penelitian.  
+- Menyimpan hasil scraping dalam **format CSV**.  
 
-### 3. Preprocessing Data  
-- Menggunakan **NLTK** atau **spaCy** untuk membersihkan data.  
+### 3️⃣ Preprocessing Data  
+- Menggunakan **NLTK** atau **spaCy** untuk membersihkan teks.  
 - Langkah-langkah preprocessing meliputi:  
   - **Tokenisasi teks** (memecah teks menjadi kata-kata).  
-  - **Stopword removal** (menghapus kata-kata umum yang tidak penting, seperti "dan", "atau", "ke").  
-  - **Lemmatization** (mengubah kata ke bentuk dasar, misalnya "berlari" → "lari").  
+  - **Stopword removal** (menghapus kata-kata umum yang tidak penting).  
+  - **Lemmatization** (mengubah kata ke bentuk dasar).  
 
-### 4. Dokumentasi  
-- **README.md ini** menjelaskan sumber data, struktur direktori proyek, dan tools yang digunakan.  
-- Menyediakan contoh hasil **data setelah preprocessing** dalam file CSV
+### 4️⃣ Topic Modeling dengan BerTopic  
+- Menggunakan **BerTopic** untuk mengelompokkan judul penelitian berdasarkan topik.  
+- Menampilkan hasil dalam bentuk **visualisasi Word Cloud & UMAP**.  
+- Menyimpan hasil clustering dalam **format CSV/JSON**.  
 
-### 5. struktur direktory
+### 5️⃣ Dokumentasi  
+- **README.md ini** menjelaskan workflow proyek dan teknologi yang digunakan.  
+- Menyediakan contoh hasil **data setelah preprocessing & topic modeling** dalam file CSV.  
 
-project_Data Collection dan Preprocessing/  
+## 📂 Struktur Direktori  
+
+```plaintext
+Topic_Modeling_with_BerTopic/  
 │── data/  
-│   ├── papers.csv  
-│   ├── cleaned_papers.csv  
+│   ├── papers.csv               # Data hasil scraping  
+│   ├── cleaned_papers.csv       # Data setelah preprocessing  
+│   ├── topic_clusters.csv       # Hasil topic modeling  
 │── scripts/  
-│   ├── main.py  
+│   ├── main.py                  # Script utama  
 │── README.md  
-│── requirements.txt  
+│── requirements.txt             # Daftar library yang dibutuhkan  
