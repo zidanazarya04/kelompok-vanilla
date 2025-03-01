@@ -1,0 +1,32 @@
+📂 web-scraping-preprocessing
+│── 📂 data
+│   ├── raw_papers.csv             # Data mentah hasil scraping
+│   ├── cleaned_papers.csv         # Data setelah preprocessing
+│   ├── final_papers.csv           # Data final setelah preprocessing dan filtering
+│
+│── 📂 notebooks
+│   ├── scraping.ipynb             # Notebook untuk proses scraping
+│   ├── preprocessing.ipynb        # Notebook untuk preprocessing teks
+│   ├── topic_modeling.ipynb       # Notebook untuk analisis topik menggunakan LDA
+│
+│── 📂 scripts
+│   ├── main.py                    # Skrip utama yang menjalankan semua proses
+│   ├── scraper.py                  # Skrip untuk scraping data dari Google Scholar
+│   ├── preprocess.py               # Skrip untuk membersihkan data teks
+│   ├── utils.py                    # Skrip helper (fungsi-fungsi pendukung)
+│
+│── 📂 models
+│   ├── lda_model.pkl               # Model LDA yang telah dilatih
+│   ├── vectorizer.pkl              # Model vectorizer (TF-IDF/CountVectorizer)
+│
+│── 📂 logs
+│   ├── scraping.log                # Log dari proses scraping
+│   ├── preprocessing.log           # Log dari proses preprocessing
+│
+│── 📂 results
+│   ├── topic_distribution.png      # Grafik distribusi topik hasil LDA
+│   ├── wordcloud.png               # Wordcloud dari hasil topik
+│
+│── .gitignore                      # File untuk mengabaikan file tertentu di Git
+│── requirements.txt                 # Daftar dependensi Python yang diperlukan
+│── README.md                        # Dokumentasi proyek
