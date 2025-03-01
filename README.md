@@ -29,11 +29,6 @@ Data diambil dari Google Scholar, difilter untuk tahun 2024, lalu diproses dan d
 - **README.md ini** menjelaskan sumber data, struktur direktori proyek, dan tools yang digunakan.  
 - Menyediakan contoh hasil **data setelah preprocessing** dalam file CSV
 
-# **Project MLOps: Data Collection dan Preprocessing**
-
-## Deskripsi Proyek  
-# Project ini bertujuan untuk melakukan scraping dan pengelompokan judul penelitian berdasarkan tema menggunakan teknik Topic Modeling.
-# Data diambil dari Google Scholar, difilter untuk tahun 2024, lalu diproses dan dikelompokkan ke dalam beberapa kategori topik.
 
 
 
