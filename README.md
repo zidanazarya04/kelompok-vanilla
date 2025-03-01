@@ -4,8 +4,6 @@
 Project ini bertujuan untuk melakukan scraping dan pengelompokan judul penelitian berdasarkan tema menggunakan teknik Topic Modeling.  
 Data diambil dari Google Scholar, difilter untuk tahun 2024, lalu diproses dan dikelompokkan ke dalam beberapa kategori topik.
 
-## Langkah-langkah Pengerjaan  
-
 ## Teknologi yang digunakan:  
 1. **Scraping:** BeautifulSoup / Selenium / Scrapy
 2. **Preprocessing:** NLTK / spaCy / Pandas
