@@ -47,7 +47,7 @@ Topic_Modeling_with_BerTopic/
 │   ├── cleaned_papers.csv       # Data setelah preprocessing  
 │   ├── topic_clusters.csv       # Hasil topic modeling  
 │── src/  
-│   ├── scarper.py               # Script utama
-│   ├── Preprocess.ipynb         # Script utama  
+│   ├── scarper.py               # Script scraping data dari Google Scholar
+│   ├── Preprocess.ipynb         # Script preprocessing (cleaning, tokenizing, dll)
 │── README.md  
 │── requirements.txt             # Daftar library yang dibutuhkan  
